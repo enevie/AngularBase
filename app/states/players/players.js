@@ -29,9 +29,9 @@
 
     controller.$inject = ['$scope', 'playersService'];
     function controller($scope, playersService) {
-       $scope.players = playersService.players;
+        $scope.players = playersService.players;
 
-     
+
     }
 
 } (angular));

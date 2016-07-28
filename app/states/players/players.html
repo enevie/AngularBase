@@ -1,3 +1,12 @@
-<div ng-repeat="player in players">
-    {{player}}<br><br>
-</div>
+<table ng-repeat="player in players">
+    <tr ng-repeat="pla in player">
+        <td ng-repeat="pl in pla">
+            <p><span>Name:</span> {{pl.name}} <br>
+                <span>Position:</span> {{pl.position}} <br>
+                <span>Date of birth:</span> {{pl.dateOfBirth}} <br>
+            </p>
+            <br>
+        </td>
+        <br>
+    </tr>
+</table>
